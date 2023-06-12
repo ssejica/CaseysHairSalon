@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@1,600&display=swap" rel="stylesheet">
+  <link rel="icon" href="scis1.png" type="png">
+  <title>Casey's Hair Salon - Our Services</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: white;
+    }
+    th {
+      border: 1px solid #4e7c88;
+      padding: 8px;
+      text-align: left;
+      color:#000000
+    }
+    td {
+      border: 1px solid #4e7c88;
+      padding: 8px;
+      text-align: left;
+      color:#4e7c88
+    }
+    th:first-child,
+    td:first-child {
+      width: 20%;
+    }
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 55%;
+    }
+    th:last-child,
+    td:last-child {
+      width: 25%;
+    }
+  </style>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #4e7c88;">
+        <div class="container">
+          <a class="navbar-brand" href="1_Home.html"style="color:#F0F0F0; font-family: 'Playfair Display', serif;">
+            <img src="scis.png" alt="Logo" width="40" class="d-inline-block align-text-middle"> 
+            Casey's Hair Salon </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="1_Home.html"style="color:rgba(255, 255, 255, 0.90)">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="2_AboutUs.html"style="color:rgba(255, 255, 255, 0.90)">About Us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="6_OurServices.html"style="color:rgba(255, 255, 255, 0.90)">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="5_MeetStylists.html"style="color:rgba(255, 255, 255, 0.90)">Meet Our Stylists</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="3_Book.html" style="background-color: #d6f3ff; color:rgba(0, 0, 0, 0.74);font-family: 'Montserrat', sans-serif;">Book Appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <h1>Our Services</h1>
+    <!--Table with prices-->
+    <b>Hair Design</b>
+    <table>
+      <tr>
+        <th>Services</th>
+        <th>Description</th>
+        <th>Prices</th>
+      </tr>
+      <tr>
+        <td>Haircut</td>
+        <td>Hair is trimmed and shaped according to your preference.</td>
+        <td>$35</td>
+      </tr>
+      <tr>
+        <td>Blowout</td>
+        <td>Gives the hair volume, shine, and a polished look.</td>
+        <td>$30</td>
+      </tr>
+      <tr>
+        <td>Hair Styling</td>
+        <td>Hair is styled for that special day!</td>
+        <td>$50</td>
+      </tr>
+  </table>
+  <b>Color</b>
+    <table>
+      <tr>
+        <th>Services</th>
+        <th>Description</th>
+        <th>Prices</th>
+      </tr>
+      <tr>
+        <td>Hair coloring</td>
+        <td>Give a fresh and vibrant look to your hair.</td>
+        <td>$80</td>
+      </tr>
+      <tr>
+        <td>Highlights</td>
+        <td>Create dimension and depth with color!</td>
+        <td>$60</td>
+      </tr>
+  </table>
+  <b>Specialty</b>
+    <table>
+      <tr>
+        <th>Services</th>
+        <th>Description</th>
+        <th>Prices</th>
+      </tr>
+      <tr>
+        <td>Hair Extensions</td>
+        <td>Transform your hair by adding length or volume with extension.</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Keratin Treatment</td>
+        <td>Treatment that reduces frizz, strengthens hair, and adds shine.</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Perming</td>
+        <td>Add long-lasting curls or waves to your straight hair.</td>
+        <td>$50</td>
+      </tr>
+      <tr>
+        <td>Scalp Massage</td>
+        <td>Promote blood circulation and relieve tension through a scalp massage.</td>
+        <td>$20</td>
+      </tr>
+      <tr>
+        <td>Scalp Treatment</td>
+        <td>Exfoliate and nourish the scalp to remove buildup, and stimulate circulation.</td>
+        <td>$45</td>
+      </tr>
+  </table>
+  <!--Space-->
+  <div style="margin-bottom: 30px;"></div>
+    <!--Button-->
+    <a href="5_MeetStylists.html" class="btn btn-outline-light text-dark"style="background-color: #d6f3ff;font-family: 'Montserrat', sans-serif;">See our Experts</a>
+  </div>
+  <!--Space-->
+  <div style="margin-bottom: 40px;"></div>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
