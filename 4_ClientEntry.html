@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@1,600&display=swap" rel="stylesheet">
+  <link rel="icon" href="scis1.png" type="png">
+  <title>Casey's Hair Salon - Client Entry</title>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #4e7c88;">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"style="color:#F0F0F0; font-family: 'Playfair Display', serif;">
+            <img src="scis.png" alt="Logo" width="40" class="d-inline-block align-text-middle"> 
+            Casey's Hair Salon </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"style="color:rgba(255, 255, 255, 0.90)">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="2_AboutUs.html"style="color:rgba(255, 255, 255, 0.90)">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="6_OurServices.html"style="color:rgba(255, 255, 255, 0.90)">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="5_MeetStylists.html"style="color:rgba(255, 255, 255, 0.90)">Meet Our Stylists</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="3_Book.html" style="background-color: #d6f3ff; color:rgba(0, 0, 0, 0.74);font-family: 'Montserrat', sans-serif;">Book Appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <!-- Main -->
+  <div class="container mt-4">
+    <h1>Enter your Information</h1>
+    <p>Please fill out the form below to complete the booking process:</p>
+    <form action="7_Verification.html">
+      <!-- Name -->  
+      <div class="form-group">
+        <label for="name" style="color:#F0F0F0;">Full Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email" style="color:#F0F0F0;">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <!-- Phone -->
+      <div class="form-group">
+        <label for="phone" style="color:#F0F0F0;">Phone:</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+      </div>
+      <br>
+      <!--Progress bar-->
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:33.33%;">
+          Enter your booking details
+        </div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:33.33%">
+          Enter your personal information
+        </div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:0%">
+          Complete!
+        </div>
+      </div>
+      <!--Space-->
+      <div style="margin-bottom: 30px;"></div>
+      <!-- Buttons -->
+      <button type="submit" class="btn btn-outline-light text-dark" style="background-color: #d6f3ff;font-family: 'Montserrat', sans-serif;">Confirm</button>
+      <a href="index.html" class="btn btn-outline-light text-dark"style="background-color: #d6f3ff;font-family: 'Montserrat', sans-serif;">Cancel</a>
+  </div>
+</form>
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.min.js"></script>
+<script>
+  function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    
+    if (name === "" || email === "" || phone === "") {
+      alert("Please fill in all the required fields.");
+      return false;
+    }
+  }
+</script>
+</body>
+</html>

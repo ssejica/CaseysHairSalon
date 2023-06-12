@@ -1,0 +1,42 @@
+/* Nav */
+.navbar-nav .nav-item.active .nav-link {font-weight: bold;}
+
+/* Main */
+body {background-color:#4e7c88;}
+h1 {color: #d6f3ff;font-family: 'Montserrat', sans-serif;}
+h2{color:#d6f3ff; font-family: 'Lato', sans-serif;}
+h5 {color: #0d2327;font-family: 'Montserrat', sans-serif;}
+h6{color: #4e7c88; font-family: 'Lato', sans-serif;}
+p {color: #F0F0F0; font-family: 'Lato', sans-serif;}
+li {color:#F0F0F0; font-family: 'Lato', sans-serif;}
+b {color: #d6f3ff; font-family: 'Lato', sans-serif;}
+i {color:#F0F0F0; font-family: 'Lato', sans-serif;}
+.smaller-header {
+    font-size: 1.7rem; 
+  }
+
+/*Maps*/
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+.google-map iframe {
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+/*banner img for about us*/
+.banner {
+    width: 100%;
+    height: 350px;
+    background-color: #ffffff;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
